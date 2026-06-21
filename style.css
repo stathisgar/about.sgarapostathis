@@ -1,0 +1,129 @@
+/* -----------------------------
+   Root variables for colors
+----------------------------- */
+:root {
+  /* Core colors */
+  --alm-primary: #0d8d9c;       /* μπλε brand */
+  --alm-dark: #1b1b1b;          /* κείμενα */
+  --alm-light: #f6f7f9;         /* background */
+
+  /* Main site accent */
+  --alm-accent-main: #f2994a;   /* πορτοκαλί highlights */
+  --alm-accent-soft: #fde9d2;   /* soft background accent */
+
+  /* Research site accent */
+  --alm-accent-research: #2f80ed; /* cool blue highlights */
+  --alm-accent-muted: #e8f0fe;   /* soft background accent */
+
+  /* Additional neutrals */
+  --alm-border: #d3d3d3;        /* light grey borders */
+}
+
+/* -----------------------------
+   Global styles
+----------------------------- */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  color: var(--alm-dark);
+  background-color: var(--alm-light);
+  line-height: 2.5;
+  margin: 20px;
+}
+
+h1 {
+  background-color: var(--alm-primary);
+  color: white;
+  font-family: Arial;
+  font-size: 2.5em;
+  font-style: italic;
+  text-align: center;
+}
+
+h2 {
+  border-style: outset;
+  border-color: var(--alm-border);
+  color: var(--alm-light);
+  background-color: var(--alm-primary);
+  font-size: 1.8em;
+  padding: 0.5%;
+}
+
+p {
+  font-style: italic;
+  font-size: 1.4em; /* διόρθωση από 1,4em σε 1.4em */
+}
+
+ul {
+  font-style: italic;
+}
+
+#menu {
+  text-align: center;
+}
+
+#intro {
+  border-style: hidden;
+  padding: 2%;
+  overflow: auto;
+  text-indent: 2%;
+  text-align: justify;
+}
+
+#pub {
+  border-style: hidden;
+  text-indent: 1%;
+  text-align: justify;
+}
+
+#initialParagraph {
+  overflow: auto;
+}
+
+#copyrights {
+  text-align: center;
+  font-size: 0.8em;
+  font-family: Arial;
+}
+
+img {
+  float: left;
+  margin: 2%;
+  margin-right: 4%;
+  padding-top: 1%;
+}
+
+/* -----------------------------
+   jQuery UI selectable
+----------------------------- */
+#selectable .ui-selecting { 
+  background: var(--alm-primary); 
+}
+#selectable .ui-selected { 
+  background: var(--alm-primary); 
+  color: white; 
+}
+#selectable { 
+  list-style-type: none; 
+  margin: 0; 
+  padding: 0; 
+  width: 60%; 
+}
+#selectable li { 
+  margin: 3px; 
+  padding: 0.4em; 
+  font-size: 1.4em; 
+  height: 18px; 
+}
+
+/* -----------------------------
+   Links and accents
+----------------------------- */
+a {
+  color: var(--alm-accent-main);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
